@@ -1,0 +1,41 @@
+{
+    "books":[
+        {
+          "title": "Conferencias de Actualización Científica para estudiantes universitarios",
+          "isbn": "La Habana, Cuba",
+          "pageCount": null,
+          "publishedDate": "7-12 Septiembre 2022",
+          "portadaURL": "Images/ScientificEvents/Conferencias de Actualización Científica",
+          "shortDescription": "En el marco de las actividades por el XX Aniversario de la Universidad de las Ciencias Informáticas se convoca por parte del Centro de Innovación y Calidad de la Educación (CICE) a participar en un Ciclo de Conferencias de Actualización Científica para los estudiantes de las carreras universitarias y el programa de formación de ciclo corto.Tendrá lugar del 7 al 12 de septiembre de 2022 en teatros, aulas y salones de nuestro campus universitario.",
+          "editorial": "Universidad de las Ciencias Informáticas",
+          "idiom": "Realizado",
+          "authors": null,
+          "categories": null
+        },
+        {
+          "title": "VIII Jornadas Iberoamericanas de Interacción Humano Computadora",
+          "isbn": "La Habana, Cuba",
+          "pageCount": null,
+          "publishedDate": "13-15 Octubre 2022",
+          "portadaURL": "Images/ScientificEvents/Jornada HCI 2022",
+          "shortDescription": "Las Jornadas Iberoamericanas de Interacción Humano-Computadora es un evento anual que, en su octava edición, se realiza por primera vez en La Habana, Cuba. Este evento, que anteriormente se realizó en Colombia, México, Perú y Brasil, es un foro de discusión y aprendizaje sobre temas relacionados con la Interacción Humano-Computadora (HCI), en el contexto iberoamericano. Ocurrirá entre el 13 y el 15 de octubre de 2022, en el Hotel Nacional de Cuba, Ciudad de La Habana.El tema principal de las VIII Jornadas Iberoamericanas de Interacción Humano Computadora será “HCI en la Transformación Digital: cambios para mejorar la sociedad”. ",
+          "editorial": "Hotel Nacional de Cuba",
+          "idiom": "Por realizar",
+          "authors": null,
+          "categories": null
+        },
+        {
+          "title": "Global Game Jam 2023",
+          "isbn": "La Habana, Cuba",
+          "pageCount": null,
+          "publishedDate": "30 Enero - 5 Febrero 2023",
+          "portadaURL": "Images/ScientificEvents/Global Game Jam 2023",
+          "shortDescription": "La Global Game Jam es el mayor evento de creación de juegos del mundo, que reúne anualmente a decenas de miles de desarrolladores de juegos de más de 100 países para crear miles de videojuegos en un lapso de 48 horas. La de 2023 será la 15ª edición del GGJ y, dado que es una ocasión tan importante, hemos decidido hacer las cosas aún más grandes este año. Como ya anunciamos anteriormente, vamos a trasladar el GGJ Next, nuestro evento anual de creación de juegos centrado en los jóvenes creadores de juegos, para que coincida con el GGJ y, en segundo lugar, anunciamos una nueva adición a nuestra tradición anual, ¡la GGJ Prep Week!.",
+          "editorial": "Universidad de las Ciencias Informáticas",
+          "idiom": "Por realizar",
+          "authors": null,
+          "categories": null
+        }
+
+    ]
+}
