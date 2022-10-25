@@ -8944,7 +8944,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1316517454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8992,15 +8992,15 @@ RectTransform:
   m_GameObject: {fileID: 1316517453}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 393.43173, y: 393.43173, z: 393.43173}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 2953820132876925460}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 607, y: -324}
-  m_SizeDelta: {x: 10, y: 6}
+  m_AnchoredPosition: {x: 814.25, y: 38.7}
+  m_SizeDelta: {x: 1293.4, y: 755.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1323505838
 GameObject:
@@ -11791,8 +11791,8 @@ RectTransform:
   - {fileID: 1815217909}
   - {fileID: 386472164}
   - {fileID: 2096367678}
-  - {fileID: 2953820132876925460}
   - {fileID: 5508038253346116309}
+  - {fileID: 2953820132876925460}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17837,7 +17837,7 @@ RectTransform:
   m_Children:
   - {fileID: 2953820133236415574}
   m_Father: {fileID: 2953820132876925460}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -17903,7 +17903,7 @@ RectTransform:
   m_Children:
   - {fileID: 2953820132324119833}
   m_Father: {fileID: 2953820132876925460}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -18388,7 +18388,7 @@ RectTransform:
   m_Children:
   - {fileID: 2953820133393760315}
   m_Father: {fileID: 2953820132876925460}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -18576,7 +18576,7 @@ RectTransform:
   m_Children:
   - {fileID: 2953820132586107137}
   m_Father: {fileID: 2953820132876925460}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -18653,6 +18653,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2953820133703297824}
   - {fileID: 1316517456}
   - {fileID: 2953820132693363099}
   - {fileID: 2953820133340052766}
@@ -18660,9 +18661,8 @@ RectTransform:
   - {fileID: 2953820132679960229}
   - {fileID: 2953820131850161643}
   - {fileID: 2953820132028618428}
-  - {fileID: 2953820133703297824}
   m_Father: {fileID: 1640265599}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -18931,7 +18931,7 @@ RectTransform:
   m_Children:
   - {fileID: 2953820132479576152}
   m_Father: {fileID: 2953820132876925460}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -19265,7 +19265,7 @@ RectTransform:
   m_Children:
   - {fileID: 2953820133665392791}
   m_Father: {fileID: 2953820132876925460}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -19284,7 +19284,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2953820132876925460}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -19447,6 +19447,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2084005882588733582}
         m_TargetAssemblyTypeName: Catalogue.Sample, Assembly-CSharp
         m_MethodName: PlayOpenMenuSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1098999036404175230}
+        m_TargetAssemblyTypeName: SliderMenuAnim, SwipeMenu
+        m_MethodName: CloseOptionsPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20650,7 +20662,7 @@ RectTransform:
   - {fileID: 5508038253781728512}
   - {fileID: 5508038252744631146}
   m_Father: {fileID: 1640265599}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}

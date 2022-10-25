@@ -1,0 +1,16 @@
+{
+    "name": "InfoHandlers",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0f122290198bc4843a1c1476bcf5f604"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

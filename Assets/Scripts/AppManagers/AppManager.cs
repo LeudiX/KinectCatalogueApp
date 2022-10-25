@@ -3,7 +3,7 @@ using System.Collections;
 using SwipeMenu;
 
 /// <summary>
-/// El gestor de juegos es un singleton persistente que maneja el tiempo
+/// El gestor de la app es un singleton persistente que maneja el tiempo
 /// </summary>
 public class AppManager : PersistentSingleton<AppManager>
 {		
