@@ -4,7 +4,9 @@
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "NewAssembly"
+        "Settings",
+        "Managers",
+        "Helpers"
     ],
     "includePlatforms": [
         "Editor"

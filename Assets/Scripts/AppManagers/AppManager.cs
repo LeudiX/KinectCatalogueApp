@@ -5,6 +5,7 @@ using SwipeMenu;
 /// <summary>
 /// El gestor de la app es un singleton persistente que maneja el tiempo
 /// </summary>
+
 public class AppManager : PersistentSingleton<AppManager>
 {		
 
