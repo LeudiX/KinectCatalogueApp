@@ -4,21 +4,20 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class PlayMode
+public class PlayModeQuitManager
 {
-    // A Test behaves as an ordinary method
-    [Test]
-    public void PlayModeSimplePasses()
-    {
-        // Use the Assert class to test conditions
-    }
-
+   
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
     // `yield return null;` to skip a frame.
     [UnityTest]
-    public IEnumerator PlayModeWithEnumeratorPasses()
+    public IEnumerator PlayM_QuitManager()
     {
-        // Use the Assert class to test conditions.
+         var gameObject = new GameObject();
+             gameObject.transform.name = "QuitManager";
+         var quitManager = gameObject.AddComponent<QuitManager>();
+            
+         //quitManager.QuitGame();
+         Application.Quit();
         // Use yield to skip a frame.
         yield return null;
     }

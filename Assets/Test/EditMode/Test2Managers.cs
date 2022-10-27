@@ -7,6 +7,7 @@ using UnityEngine.TestTools;
 public class Test2Managers {
 
     AppManager manager = new AppManager ();
+
     // A Test behaves as an ordinary method
     [Test]
     public void Test2AppManagerSetTimeScale () {
@@ -20,6 +21,7 @@ public class Test2Managers {
         manager.ResetTimeScale ();
 
     }
+
     [Test]
     public void Test2AppManagerPause () {
         manager.Pause ();
