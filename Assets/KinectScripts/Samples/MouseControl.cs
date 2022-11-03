@@ -238,6 +238,7 @@ public class MouseControl
 	// Public function to emulate a mouse button click (left button)
     public static void MouseClick()
     {
+		
         mouse_event(MouseFlags.LeftDown, 0, 0, 0, System.UIntPtr.Zero);
         mouse_event(MouseFlags.LeftUp, 0, 0, 0, System.UIntPtr.Zero);
     }

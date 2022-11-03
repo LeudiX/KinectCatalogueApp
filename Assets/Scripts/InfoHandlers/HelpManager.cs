@@ -1,67 +1,83 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HelpManager : MonoBehaviour
-{
+/// <summary>
+/// Manager para el manejo de la información en el panel de Ayuda
+/// </summary>
+/// <returns>Maneja  parámetros y funciones relativas al trabajo con la información que se muestra en el panel de Ayuda</returns>
+public class HelpManager : MonoBehaviour {
 
     public Text nameText;
     public Text dialogueText;
+
+    public Image image;
     private Queue<string> sentences;
+    private Queue<Sprite> sprites;
     public Animator animator;
 
-    // Se llama a Start antes de la actualización del primer fotograma
-    void Start()
-    {
-        sentences = new Queue<string>();
+    ///<summary> Se llama a Start antes de la actualización del primer fotograma </summary>
+    void Start () {
+        sentences = new Queue<string> ();
+        sprites = new Queue<Sprite> ();
     }
 
-    public void StartHelpDialogue (HelpDialogue dialogue)
-    {
+    ///<summary> Maneja el flujo de información y la muestra de imágenes </summary>
+    public void StartHelpDialogue (HelpDialogue dialogue) {
         //Debug.Log("Comenzando la descripcion de la seccion "+ dialogue.name);
 
-        animator.SetBool("isOpen", true);
+        animator.SetBool ("isOpen", true);
 
         nameText.text = dialogue.name;
 
-        sentences.Clear();
+        sentences.Clear ();
+        sprites.Clear ();
 
-        foreach(string sentence in dialogue.sentences)
-        {
-            sentences.Enqueue(sentence);
+        //información
+        foreach (string sentence in dialogue.sentences) {
+            sentences.Enqueue (sentence);
         }
-        
-        DisplayNextSentence();
-    }
-
-    public void DisplayNextSentence()
-    {
-        if(sentences.Count == 0)
-        {
-        EndDialogue();
-        return;
+        //imágenes
+        foreach (Sprite sprite in dialogue.sprites) {
+            sprites.Enqueue (sprite);
         }
-        string sentence = sentences.Dequeue();
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+        //Concatena las secuencias de información 
+        DisplayNextSentence ();
     }
-
-    IEnumerator TypeSentence(string sentence)
-    {
+    /// <summary>Muestra las siguientes secuencias de información</summary>    
+    public void DisplayNextSentence () {
+        if (sentences.Count == 0) {
+            EndDialogue ();
+            return;
+        }
+        string sentence = sentences.Dequeue ();
+        Sprite sprite = sprites.Dequeue ();
+        StopAllCoroutines ();
+        StartCoroutine (TypeSentence (sentence));
+        StartCoroutine (ShowSprite (sprite));
+    }
+    
+    
+    /// <summary>Muestra la información definida caractér por caractér</summary>    
+    IEnumerator TypeSentence (string sentence) {
         dialogueText.text = "";
-        foreach(char letter in sentence.ToCharArray())
-        {
+        foreach (char letter in sentence.ToCharArray ()) {
             dialogueText.text += letter;
-            yield return null; 
-        } 
+            yield return null;
+        }
     }
 
-    void EndDialogue()
-    {
-        animator.SetBool("isOpen", false);
+    ///<summary>Muestra las imágenes definidas</summary>
+    IEnumerator ShowSprite (Sprite sprite) {
+        image.GetComponent<Image> ().sprite = sprite;
+        yield return null;
+
     }
 
-
+    ///<summary>Fin del diálogo. Desencadeno animación para cerrar el panel</summary>   
+   public void EndDialogue () {
+        animator.SetBool ("isOpen", false);
+    }
 
 }

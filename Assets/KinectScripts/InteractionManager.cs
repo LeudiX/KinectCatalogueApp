@@ -443,6 +443,7 @@ public class InteractionManager : MonoBehaviour
 								if(controlMouseCursor)
 								{
 									MouseControl.MouseClick();
+								
 
 									isLeftHandClick = false;
 									leftHandClickProgress = 0f;
@@ -527,7 +528,7 @@ public class InteractionManager : MonoBehaviour
 								if(controlMouseCursor)
 								{
 									MouseControl.MouseClick();
-
+		
 									isRightHandClick = false;
 									rightHandClickProgress = 0f;
 									lastRightHandPos = Vector3.zero;

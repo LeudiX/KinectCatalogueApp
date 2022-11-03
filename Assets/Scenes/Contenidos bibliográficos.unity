@@ -238,7 +238,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 536.7, y: 1.7000008}
-  m_SizeDelta: {x: 50.99, y: 40.24}
+  m_SizeDelta: {x: 36.5, y: 32.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &58867221
 MonoBehaviour:
@@ -5154,7 +5154,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 537.4, y: -0.000019073486}
-  m_SizeDelta: {x: 50.99, y: 40.24}
+  m_SizeDelta: {x: 36.5, y: 32.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &718540936
 MonoBehaviour:
@@ -8035,7 +8035,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 531.4, y: -0.33239174}
-  m_SizeDelta: {x: 50.99, y: 40.24}
+  m_SizeDelta: {x: 36.5, y: 32.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1135739077
 MonoBehaviour:
@@ -10704,7 +10704,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 537.4, y: -0.000019073486}
-  m_SizeDelta: {x: 50.99, y: 40.24}
+  m_SizeDelta: {x: 36.5, y: 32.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1534890742
 MonoBehaviour:
@@ -12272,10 +12272,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   showHandCursor: 1
-  gripHandTexture: {fileID: 2800000, guid: f8409ae98c7be704dad7d3c4de1f2551, type: 3}
-  releaseHandTexture: {fileID: 2800000, guid: ecb96af72adb5a746878d402b2c74492, type: 3}
-  normalHandTexture: {fileID: 2800000, guid: 4215c8c9486339f4985d688029216aeb, type: 3}
-  smoothFactor: 10
+  gripHandTexture: {fileID: 2800000, guid: 8a3a850ce353f6840b7690df3fbd486e, type: 3}
+  releaseHandTexture: {fileID: 2800000, guid: 616b0a36c6936864cb0d4004186260c7, type: 3}
+  normalHandTexture: {fileID: 2800000, guid: 616b0a36c6936864cb0d4004186260c7, type: 3}
+  smoothFactor: 7
   allowHandClicks: 1
   controlMouseCursor: 1
   controlMouseDrag: 1

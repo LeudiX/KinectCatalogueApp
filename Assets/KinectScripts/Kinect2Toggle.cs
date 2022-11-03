@@ -51,6 +51,7 @@ public class Kinect2Toggle : MonoBehaviour
     private void OnValueChange(bool isOn)
 		{
 
+         Cursor.visible = !isOn;   
          InteractionManager.Instance.enabled= isOn;
          eventSyst.GetComponent<InteractionInputModule>().enabled = isOn; 
          eventSyst.GetComponent<StandaloneInputModule>().enabled = !isOn;  

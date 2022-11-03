@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 32, y: -658.00885}
+  m_AnchoredPosition: {x: 32, y: -658.0106}
   m_SizeDelta: {x: -987.6, y: -47.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &230065056
@@ -982,6 +982,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 617114716}
   m_CullTransparentMesh: 0
+--- !u!1 &770485846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 770485847}
+  - component: {fileID: 770485849}
+  - component: {fileID: 770485848}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &770485847
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770485846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1734404340}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -211.49876, y: 73.50811}
+  m_SizeDelta: {x: 159.3324, y: 192.3842}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &770485848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770485846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &770485849
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770485846}
+  m_CullTransparentMesh: 1
 --- !u!1 &784733615
 GameObject:
   m_ObjectHideFlags: 0
@@ -1598,12 +1673,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1734404340}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.025263611}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.4000244, y: -6.3120117}
-  m_SizeDelta: {x: -34.8, y: -100.67}
+  m_AnchoredPosition: {x: 94.52701, y: -2.3036041}
+  m_SizeDelta: {x: -204.45, y: -111.9268}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1056313390
 MonoBehaviour:
@@ -1630,7 +1705,7 @@ MonoBehaviour:
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -1681,12 +1756,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   showHandCursor: 1
-  gripHandTexture: {fileID: 2800000, guid: f8409ae98c7be704dad7d3c4de1f2551, type: 3}
-  releaseHandTexture: {fileID: 2800000, guid: ecb96af72adb5a746878d402b2c74492, type: 3}
-  normalHandTexture: {fileID: 2800000, guid: 4215c8c9486339f4985d688029216aeb, type: 3}
-  smoothFactor: 10
+  gripHandTexture: {fileID: 2800000, guid: 8a3a850ce353f6840b7690df3fbd486e, type: 3}
+  releaseHandTexture: {fileID: 2800000, guid: 616b0a36c6936864cb0d4004186260c7, type: 3}
+  normalHandTexture: {fileID: 2800000, guid: 616b0a36c6936864cb0d4004186260c7, type: 3}
+  smoothFactor: 7
   allowHandClicks: 1
-  controlMouseCursor: 0
+  controlMouseCursor: 1
   controlMouseDrag: 1
   interactionListeners: []
   debugText: {fileID: 0}
@@ -1734,7 +1809,7 @@ MonoBehaviour:
   gestureManager: {fileID: 0}
   gestureListeners: []
   calibrationText: {fileID: 230065056}
-  gesturesDebugText: {fileID: 526750730}
+  gesturesDebugText: {fileID: 0}
 --- !u!4 &1070431044
 Transform:
   m_ObjectHideFlags: 0
@@ -2129,11 +2204,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1734404340}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.025263611}
   m_AnchorMax: {x: 1, y: 0.98200005}
-  m_AnchoredPosition: {x: 0, y: 153.50002}
+  m_AnchoredPosition: {x: 78, y: 158}
   m_SizeDelta: {x: -287.1, y: -324.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1144807837
@@ -3083,6 +3158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 1144807837}
   dialogueText: {fileID: 1056313390}
+  image: {fileID: 770485848}
   animator: {fileID: 1734404343}
 --- !u!4 &1625070290
 Transform:
@@ -3205,9 +3281,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 770485847}
   - {fileID: 1144807836}
   - {fileID: 1056313389}
   - {fileID: 1929434836}
+  - {fileID: 1888046299}
   m_Father: {fileID: 1337776438}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3823,16 +3901,170 @@ MonoBehaviour:
     - "El cat\xE1logo virtual interactivo constituye una gu\xEDa para el aprendizaje
       de todos los usuarios\r que acceden a la biblioteca universitaria. Est\xE1
       compuesto por una amplia variedad de materiales \r de consulta que fortalecen
-      el estudio y la preparaci\xF3n en el campo de las ciencias computacionales. 
-      Para la extracci\xF3n y control de datos que proporciona el Kinect 2 fue imprescindible
-      conocer la arquitectura del dispositivo; como es que est\xE1 administrando
-      el software al hardware y como es que el Kinect responde a ello.\r   "
-    - "Para acceder al Cat\xE1logo, por favor seleccione en el Men\xFA la opci\xF3n
-      correspondiente.\n\nPara acceder a las Opciones, por favor seleccione en el
-      Men\xFA la opci\xF3n correspondiente. \n\nPara acceder a la Ayuda, por favor
-      seleccione en el Men\xFA la opci\xF3n correspondiente.\n\nPara salir del Cat\xE1logo,
-      por favor seleccione en el Men\xFA la opci\xF3n correspondiente.\n\n                          
-      \t\t\t\n"
+      el estudio y la preparaci\xF3n de los educandos en el campo de las ciencias
+      computacionales.    "
+    - "El empleo del dispositivo Kinect 2, constituye una alternativa para apoyar
+      la interacci\xF3n entre los usuarios y la aplicaci\xF3n. Los gestos que se
+      emplean obtienen el control del cursor sobre la interfaz, simulando las \racciones
+      del rat\xF3n (click, drag, drop) mediante la detecci\xF3n e interpretaci\xF3n
+      de los gestos\r con las manos: abrir y cerrar."
+    - "En  la secci\xF3n Cat\xE1logo, podr\xE1s visualizar variedad de contenidos
+      (libros, revistas, art\xEDculos cient\xEDficos, tesis de grado y eventos) pertenecientes
+      al \xE1rea de la inform\xE1tica. Para acceder, selecciona en el men\xFA la
+      opci\xF3n correspondiente."
+    - "En la secci\xF3n Opciones, podr\xE1s configurar las opciones de interacci\xF3n
+      o sonido  a tu gusto. Activa o desactiva el Kinect 2 si deseas interactuar
+      o no mediante gestos con la aplicaci\xF3n. Configura el ambiente de sonido
+      a tu gusto. Para acceder,  selecciona en el men\xFA la opci\xF3n correspondiente."
+    sprites:
+    - {fileID: 21300000, guid: 1ac1c52cdf4acb94fa92bf055ffb8e2e, type: 3}
+    - {fileID: 21300000, guid: c699d963744d5a148bfb1708adc74aab, type: 3}
+    - {fileID: 21300000, guid: 16473ff2fcd812347827fa1b0a7b8fb3, type: 3}
+    - {fileID: 21300000, guid: 296e07de735b6584fad38036a11668c6, type: 3}
+--- !u!1 &1888046298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1888046299}
+  - component: {fileID: 1888046302}
+  - component: {fileID: 1888046301}
+  - component: {fileID: 1888046300}
+  m_Layer: 5
+  m_Name: Button (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1888046299
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888046298}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.668954, y: 0.7870047, z: 0.7870047}
+  m_Children: []
+  m_Father: {fileID: 1734404340}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -31, y: -32}
+  m_SizeDelta: {x: 48.2, y: 39.4}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1888046300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888046298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1888046301}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1625070289}
+        m_TargetAssemblyTypeName: HelpManager, InfoHandlers
+        m_MethodName: EndDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5943646263386621905}
+        m_TargetAssemblyTypeName: Catalogue.Sample, Assembly-CSharp
+        m_MethodName: PlayBackMenuSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1888046301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888046298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1ef3c70a3ec90854a99ca051196a7384, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1888046302
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888046298}
+  m_CullTransparentMesh: 0
 --- !u!1 &1929434835
 GameObject:
   m_ObjectHideFlags: 0
@@ -3864,7 +4096,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1734404340}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -4012,7 +4244,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -40, y: 0}
-  m_SizeDelta: {x: 40, y: 40}
+  m_SizeDelta: {x: 36.5, y: 32.7}
   m_Pivot: {x: -1, y: 0.5}
 --- !u!114 &2015331308
 MonoBehaviour:
@@ -4090,7 +4322,7 @@ RectTransform:
   m_GameObject: {fileID: 2051094298}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.67515, y: 0.67515, z: 0.67515}
   m_Children: []
   m_Father: {fileID: 4220674787718918745}
   m_RootOrder: 2
