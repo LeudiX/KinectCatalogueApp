@@ -472,7 +472,7 @@
     {
       "title": "Specification by Example",
       "isbn": "1617290084",
-      "pageCount": 0,
+      "pageCount": 375,
       "publishedDate": "6 Junio 2011",
       "portadaURL": "Images/Books/Specification by Example",
       "shortDescription":"La especificación por ejemplo es un método colaborativo para especificar requisitos y pruebas. Siete patrones, explorados completamente en este libro, son clave para que el método sea efectivo. El método tiene cuatro beneficios principales: produce documentación viva y confiable; define claramente las expectativas y hace que la validación sea eficiente; reduce el retrabajo; y, sobre todo, asegura a los equipos de entrega ya las partes interesadas del negocio que el software creado es adecuado para su propósito. Este libro extrae de la experiencia de equipos líderes en todo el mundo formas efectivas de especificar, probar y entregar software en ciclos de entrega breves e iterativos. Los estudios de casos en este libro van desde pequeñas empresas emergentes de la web hasta grandes instituciones financieras, que trabajan en muchos procesos, incluidos XP, Scrum y Kanban.",

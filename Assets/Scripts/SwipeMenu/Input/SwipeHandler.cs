@@ -179,7 +179,7 @@ namespace SwipeMenu
 
 			}
 
-            mouseMove = Helper.GetMouseAxis(MouseAxis.x); 
+            mouseMove = MouseAxisGetter.GetMouseAxis(MouseAxis.x); 
         
             if (handleSwipes && Input.GetMouseButton (0) && mouseMove != 0) {
          

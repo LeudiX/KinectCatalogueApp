@@ -19,7 +19,7 @@ namespace SwipeMenu
 		/// <summary>
 		/// The selected menu item has to be centred for selection to occur.
 		/// </summary>
-		public bool requireMenuItemToBeCentredForSelectiion = true;
+		public bool requireMenuItemToBeCentredForSelection = true;
 
 		private SwipeHandler _swipeHandler;
 
@@ -45,7 +45,7 @@ namespace SwipeMenu
 			}
 #else
             if (Input.GetMouseButtonUp (0) && 
-			Helper.GetMouseAxis(MouseAxis.x) == 0) {
+			MouseAxisGetter.GetMouseAxis(MouseAxis.x) == 0) {
 				CheckTouch (Input.mousePosition);
 			}
 #endif
@@ -67,7 +67,7 @@ namespace SwipeMenu
 				} else {
 					Menu.instance.AnimateToTargetItem (item);
 
-					if (!requireMenuItemToBeCentredForSelectiion) {
+					if (!requireMenuItemToBeCentredForSelection) {
 						Menu.instance.ActivateSelectedMenuItem (item);
 					}
 				}

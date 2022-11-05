@@ -1,50 +1,42 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
-
-namespace SwipeMenu
-{
+namespace SwipeMenu {
 
 	/// <summary>
 	///Adjuntar a cualquier elemento del menú.
 	/// </summary>
-	public class MenuItem : MonoBehaviour
-	{
-		
-	        
-	public GameObject title;
+	public class MenuItem : MonoBehaviour {
 
-	[System.Serializable]
-	public class Books{
-			
-		
+		private Text _text;
 
-		public Sprite portada;
-		public string portadaURL;
+		[System.Serializable]
+		public class Books {
 
-		public string pdfURL;
-	 	public string title;
-	 	public string idiom;
-        public string isbn;
-        public int pageCount;
-        public string publishedDate;
-        public string shortDescription;
-        public string  editorial;
-        public string[] authors;
-        public string[] categories;
-	}
- 	
+			public Sprite portada;
+			public string portadaURL;
 
-	[System.Serializable]
-    public class BooksList{
+			public string pdfURL;
+			public string title;
+			public string idiom;
+			public string isbn;
+			public int pageCount;
+			public string publishedDate;
+			public string shortDescription;
+			public string editorial;
+			public string[] authors;
+			public string[] categories;
+		}
 
-        public Books[] books;
-    }
+		[System.Serializable]
+		public class BooksList {
 
+			public Books[] books;
+		}
 
- 		/// <summary>
+		/// <summary>
 		/// El comportamiento que se invocará cuando se seleccione el elemento de menú.
 		/// </summary>
 		public Button.ButtonClickedEvent OnClick;
@@ -54,18 +46,22 @@ namespace SwipeMenu
 		/// </summary>
 		public Button.ButtonClickedEvent OnOtherMenuClick;
 
-	
-	void Update ()
-	{
-		
-		//Si este elemento está centrado
-		if (Menu.instance.MenuCentred (this.GetComponent<MenuItem>())) 		
+		void Start () {
+			_text = GameObject.Find ("GlobalTitle").GetComponent<Text> ();
+		}
+
+		void Update () {
+
+			//Si este elemento está centrado
+			if (Menu.instance.MenuCentred (this)) {
+
+				_text.text = this.transform.GetChild (1).GetComponent<Text> ().text;
+			}
 			// Muestro el texto sobre el elemento que está centrado
-			title.transform.GetComponent<Text>().text = this.transform.GetChild(1).GetComponent<Text>().text;
-		else 
-			return;
-	
-	}
+
+			//Debug.Log ("El libro " + _text.text + " está centrado");
+
+		}
 
 	}
 }

@@ -34,7 +34,7 @@ namespace SwipeMenu
 							}
 						}
 			#else
-						if (Input.GetMouseButtonUp (0) && Helper.GetMouseAxis(MouseAxis.x) == 0) {
+						if (Input.GetMouseButtonUp (0) && MouseAxisGetter.GetMouseAxis(MouseAxis.x) == 0) {
 							CheckTouch (Input.mousePosition);
 						}
 			#endif

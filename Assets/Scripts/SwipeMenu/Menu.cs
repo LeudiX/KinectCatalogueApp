@@ -161,8 +161,7 @@ namespace SwipeMenu {
 		void Update () {
 			_instance = gameObject.GetComponent<Menu> ();
 			UpdateMenuItemsPositionInWorldSpace ();
-
-		}
+			}
 
 		/// <summary>
 		/// Mueve todo el menú a la izquierda/derecha en función del parámetro de la cantidad. 
@@ -393,6 +392,7 @@ namespace SwipeMenu {
 				float posz = CalculateMenuItemZPosition (offsetx);
 				Vector3 pos = new Vector3 (posx, 0, posz);
 				menuItems[i].transform.position = pos;
+					
 				Vector3 euler = new Vector3 (0, CalculateMenuItemRotation (offsetx), 0);
 				menuItems[i].transform.eulerAngles = euler;
 			}
