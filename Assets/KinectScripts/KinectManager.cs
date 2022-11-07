@@ -2217,7 +2217,7 @@ public class KinectManager : MonoBehaviour
 	}
 	
 	//void OnApplicationQuit()
-	void OnDestroy() 
+	/*void OnDestroy() 
 	{
 		//Debug.Log("KM was destroyed");
 
@@ -2234,7 +2234,7 @@ public class KinectManager : MonoBehaviour
 		}
 
 		instance = null;
-	}
+	}*/
 
 	void OnGUI()
     {
